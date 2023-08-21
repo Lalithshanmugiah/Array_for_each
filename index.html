@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrayforeach</title>
+</head>
+<body>
+    <p id ='para'></p>
+    <script>
+
+        const numbers =[10,20,30,40,50];
+        let text = "";
+        numbers.forEach(myFunction);
+        document.getElementById("para").innerHTML= text;
+
+        function myFunction(value, index, array){
+            text += value + "<br>";
+
+        }
+    </script>
+
+</body>
+</html>
